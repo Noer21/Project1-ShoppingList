@@ -1,0 +1,28 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Shopping List</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    
+      <ion-item>
+        <ion-label floating>Goods</ion-label>
+        <ion-input type="text" [(ngModel)]='shoppingItem.itemName'></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label floating>Count</ion-label>
+        <ion-input type="number" [(ngModel)]="shoppingItem.itemNumber"></ion-input>
+      </ion-item>
+    
+    </ion-list>
+
+    <button ion-button block (click)='addshoppingitem(shoppingItem)'>Insert </button>
+
+
+</ion-content>
